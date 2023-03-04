@@ -6,36 +6,38 @@
   
 
 
-
+<!-- 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200;1,300;1,500;1,700&display=swap"
       rel="stylesheet"
-    />
+    /> -->
     <link
-      rel="stylesheet"
-      
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+      rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
     />
   </head>
   <body>
     <section class="header">
+      <nav class="navbar navbar-default  navbar-fixed-top ">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a href=""><img src="../assets/rslogo.png"alt="dsd" /></a>    
       <nav>
-       
+
         <div class="nav-links" id="nav Links">
-          <i class="fa fa-times" OneClick="hideMenu()"></i>
+          <i class="fa fa-times"></i>
           <ul>
-            <li><a href="#">HOME</a>
-              <li><a href="about.html">ABOUT</a></li>
+            <!-- <li><a href="#">HOME</a> -->
+              <!-- <li><a href="about.html">ABOUT</a></li> -->
           
               </li>
            
-            <li><a href="contact.html">CONTACT</a></li>
+            <!-- <li><a href="contact.html">CONTACT</a></li> -->
           </ul>
         </div>
     
-        <i class="fa fa-bars" OneClick="showmenu()"></i>
+        <i class="fa fa-bars"></i>
       </nav>
       <div class="Text-Box">
         <h1>RS Designing and Construction<br> Consultancy</h1>
@@ -164,5 +166,24 @@
         navlinks.style.right = "-200px";
       }
     </script>
+
+    <?php
+if(isset($_POST['submit'])){
+    $to = "youremail@example.com"; // Enter your email address here
+    $subject = "Contact Form Submission";
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    
+    $body = "From: $name\nEmail: $email\nMessage:\n$message";
+    
+    if(mail($to, $subject, $body)){
+        echo "Thank you for contacting us. We will get back to you soon.";
+    } else{
+        echo "Oops! Something went wrong. Please try again later.";
+    }
+}
+?>
+
   </body>
 </html>
