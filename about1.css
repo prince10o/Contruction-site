@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  background: #ddd;
 }
 .about-us{
   height: 100vh;
@@ -27,7 +28,7 @@
   width: 540px;
 }
 .text h2{
-  font-size: 90px;
+  font-size: 150px;
   font-weight: 600;
   margin-bottom: 10px;
 
@@ -36,9 +37,6 @@
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 20px;
-}
-span{
-  color: #4070f4;
 }
 .text p{
   font-size: 18px;
@@ -51,7 +49,7 @@ span{
 .hire{
   font-size: 18px;
   background: #4070f4;
-  color: #fff;
+  color: #4070f4;
   text-decoration: none;
   border: none;
   padding: 8px 25px;
@@ -73,7 +71,7 @@ span{
   height: 100vh;
   width: 100%;
   padding: 90px 0;
-  background: #ddd;
+
 }
 .pic{
   height: auto;
