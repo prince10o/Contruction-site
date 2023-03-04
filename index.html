@@ -145,7 +145,8 @@
       </section>
        <!-- -----Footer----- -->
        <section class="Footer">
-         <h4>About Us</h4>
+        <button> <a href="about1.html" style="color: rgb(255, 255, 255);">About us</a>    </button>
+        <!-- <a href="about1.html">About us</a> -->
          <p>We are RS Designing and Construction Consultancy. We provide best and qualatative results to our valuable customers.We believe in you and in our methods which makes us one of the best among all.<br>
         We are having an experiance of more than 10 years which will give us more support and help us to provide best results.We are not believing in creating shortcuts<br>
       as we believe to secure your future.  </p>
@@ -167,23 +168,6 @@
       }
     </script>
 
-    <?php
-if(isset($_POST['submit'])){
-    $to = "youremail@example.com"; // Enter your email address here
-    $subject = "Contact Form Submission";
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-    
-    $body = "From: $name\nEmail: $email\nMessage:\n$message";
-    
-    if(mail($to, $subject, $body)){
-        echo "Thank you for contacting us. We will get back to you soon.";
-    } else{
-        echo "Oops! Something went wrong. Please try again later.";
-    }
-}
-?>
-
+  
   </body>
 </html>

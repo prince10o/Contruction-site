@@ -138,6 +138,7 @@
   nav .fa {
     display: none;
   }
+
   @media (max-width: 700px) {
    
     .Text-Box h1 {
@@ -315,6 +316,21 @@
     margin-bottom: 40px;
     padding: 0;
   }
+  .Footer button {
+    text-decoration: none;
+    padding: 12px;
+    margin: 50px 0px;
+    background-color: rebeccapurple;
+    border: 2px solid transparent;
+    color: white;
+    border-radius: 5px;
+    transition: .3s all ease;
+  }
+  .Footer button :hover{
+    background-color: transparent;
+    
+    border: 2px solid rebeccapurple;
+}
   @media (max-width: 600px) {
     .CTA h3 {
       font-size: 24px;
@@ -328,6 +344,7 @@
     text-align: center;
     padding: 30px 0;
   }
+
   .Footer:h4 {
     margin-bottom: 25px;
     margin-top: 20px;
