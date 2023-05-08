@@ -20,11 +20,12 @@
     align-items: center;
   }
   nav img {
-      width: 50px;
+      width: 100%;
+  height: 400px;
     position: fixed;
     top: 15px;
     left: 0;
-    height: 70px;
+   
     width: auto;
   }
   .nav-links {
