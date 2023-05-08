@@ -20,13 +20,11 @@
     align-items: center;
   }
   nav img {
-      width: 100%;
-  height: 400px;
-    position: fixed;
-    top: 15px;
-    left: 0;
-   
-   
+      width: 50%; /* decrease the width to 50% */
+  height: 200px; /* decrease the height to 200px */
+  position: fixed;
+  top: 15px;
+  left: 0;
   }
   .nav-links {
     /* flex: 1; */
