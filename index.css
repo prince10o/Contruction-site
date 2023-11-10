@@ -19,13 +19,6 @@
     justify-content: space-between;
     align-items: center;
   }
-  nav img {
-      width: 50%; /* decrease the width to 50% */
-  height: 200px; /* decrease the height to 200px */
-  position: fixed;
-  top: 15px;
-  left: 0;
-  }
   .nav-links {
     /* flex: 1; */
     /* text-align: right; */
